@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .data-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        .data-section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .data-group {
+            flex: 1 1 30%;
+            margin: 15px; /* Mantenemos el margen para mayor separación */
+            min-width: 200px;
+        }
+        .data-group label {
+            display: block;
+            margin-bottom: 8px; /* Aumenté el margen inferior del label */
+            font-weight: bold;
+            font-size: 11px;
+            color: #555; /* Color más suave para los labels */
+        }
+        .data-group span {
+            display: block;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9; /* Fondo para resaltar los datos */
+            width: 70%; /* Ancho reducido para coincidir con el formulario */
+        }
+        .data-section h3 {
+            width: 100%;
+            margin-bottom: 15px; /* Aumenté el margen inferior del título */
+            color: #555;
+        }
+        .data-section hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 20px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="data-container">
+    <h2>Registration Details</h2>
+
+    <!-- Sección de detalles personales -->
+    <div class="data-section">
+        <h3>Personal Details</h3>
+        <div class="data-group">
+            <label for="fullName">Full Name</label>
+            <span id="fullName">John Doe</span> <!-- Ejemplo de dato cargado -->
+        </div>
+        <div class="data-group">
+            <label for="mobileNumber">Mobile Number</label>
+            <span id="mobileNumber">+1234567890</span>
+        </div>
+        <div class="data-group">
+            <label for="email">Email</label>
+            <span id="email">john.doe@example.com</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Sección de detalles de identidad -->
+    <div class="data-section">
+        <h3>Identity Details</h3>
+        <div class="data-group">
+            <label for="idType">ID Type</label>
+            <span id="idType">Passport</span>
+        </div>
+        <div class="data-group">
+            <label for="idNumber">ID Number</label>
+            <span id="idNumber">AB1234567</span>
+        </div>
+        <div class="data-group">
+            <label for="issueDate">Issue Date</label>
+            <span id="issueDate">2020-01-01</span>
+        </div>
+        <div class="data-group">
+            <label for="expiryDate">Expiry Date</label>
+            <span id="expiryDate">2030-01-01</span>
+        </div>
+        <div class="data-group">
+            <label for="issueState">Issue State</label>
+            <span id="issueState">California</span>
+        </div>
+        <div class="data-group">
+            <label for="issueAuthority">Issue Authority</label>
+            <span id="issueAuthority">Department of State</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Sección de detalles adicionales -->
+    <div class="data-section">
+        <h3>Additional Details</h3>
+        <div class="data-group">
+            <label for="dob">Date of Birth</label>
+            <span id="dob">1985-05-15</span>
+        </div>
+        <div class="data-group">
+            <label for="gender">Gender</label>
+            <span id="gender">Male</span>
+        </div>
+        <div class="data-group">
+            <label for="occupation">Occupation</label>
+            <span id="occupation">Software Engineer</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

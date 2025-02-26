@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Empleado</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulario de Empleado</h1>
+        <form id="empleado-form">
+            <!-- Grupo 1: 8 campos -->
+            <div class="form-group">
+                <h2>Información Personal</h2>
+                <div class="form-columns">
+                    <div class="form-column">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                        
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+                        
+                        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+                    </div>
+                    <div class="form-column">
+                        <label for="genero">Género:</label>
+                        <select id="genero" name="genero">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Ingrese su email">
+                    </div>
+                    <div class="form-column">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección">
+                        
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="text" id="ciudad" name="ciudad" placeholder="Ingrese su ciudad">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grupo 2: 10 campos -->
+            <div class="form-group">
+                <h2>Información Laboral</h2>
+                <div class="form-columns">
+                    <div class="form-column">
+                        <label for="puesto">Puesto:</label>
+                        <input type="text" id="puesto" name="puesto" placeholder="Ingrese su puesto">
+                        
+                        <label for="departamento">Departamento:</label>
+                        <select id="departamento" name="departamento">
+                            <option value="ventas">Ventas</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="it">IT</option>
+                            <option value="rrhh">RRHH</option>
+                        </select>
+                        
+                        <label for="fecha-inicio">Fecha de Inicio:</label>
+                        <input type="date" id="fecha-inicio" name="fecha-inicio">
+                        
+                        <label for="salario">Salario:</label>
+                        <input type="number" id="salario" name="salario" placeholder="Ingrese su salario">
+                    </div>
+                    <div class="form-column">
+                        <label for="jornada">Jornada:</label>
+                        <select id="jornada" name="jornada">
+                            <option value="completa">Completa</option>
+                            <option value="parcial">Parcial</option>
+                        </select>
+                        
+                        <label for="supervisor">Supervisor:</label>
+                        <input type="text" id="supervisor" name="supervisor" placeholder="Ingrese su supervisor">
+                        
+                        <label for="horario">Horario:</label>
+                        <input type="text" id="horario" name="horario" placeholder="Ingrese su horario">
+                        
+                        <label for="contrato">Tipo de Contrato:</label>
+                        <select id="contrato" name="contrato">
+                            <option value="indefinido">Indefinido</option>
+                            <option value="temporal">Temporal</option>
+                            <option value="practicas">Prácticas</option>
+                        </select>
+                    </div>
+                    <div class="form-column">
+                        <label for="beneficios">Beneficios:</label>
+                        <input type="text" id="beneficios" name="beneficios" placeholder="Ingrese los beneficios">
+                        
+                        <label for="vacaciones">Días de Vacaciones:</label>
+                        <input type="number" id="vacaciones" name="vacaciones" placeholder="Ingrese días de vacaciones">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grupo 3 y 4: Información Bancaria e Información Adicional lado a lado -->
+            <div class="form-group">
+                <div class="form-columns">
+                    <!-- Información Bancaria (4 campos) -->
+                    <div class="form-group" style="flex: 1;">
+                        <h2>Información Bancaria</h2>
+                        <div class="form-columns">
+                            <div class="form-column">
+                                <label for="banco">Banco:</label>
+                                <input type="text" id="banco" name="banco" placeholder="Ingrese el nombre del banco">
+                                
+                                <label for="cuenta">Número de Cuenta:</label>
+                                <input type="text" id="cuenta" name="cuenta" placeholder="Ingrese el número de cuenta">
+                            </div>
+                            <div class="form-column">
+                                <label for="clabe">CLABE:</label>
+                                <input type="text" id="clabe" name="clabe" placeholder="Ingrese la CLABE">
+                                
+                                <label for="tipo-cuenta">Tipo de Cuenta:</label>
+                                <select id="tipo-cuenta" name="tipo-cuenta">
+                                    <option value="ahorro">Ahorro</option>
+                                    <option value="nomina">Nómina</option>
+                                    <option value="corriente">Corriente</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Información Adicional (4 campos) -->
+                    <div class="form-group" style="flex: 1;">
+                        <h2>Información Adicional</h2>
+                        <div class="form-columns">
+                            <div class="form-column">
+                                <label for="emergencia-nombre">Nombre de Emergencia:</label>
+                                <input type="text" id="emergencia-nombre" name="emergencia-nombre" placeholder="Ingrese el nombre">
+                                
+                                <label for="emergencia-telefono">Teléfono de Emergencia:</label>
+                                <input type="tel" id="emergencia-telefono" name="emergencia-telefono" placeholder="Ingrese el teléfono">
+                            </div>
+                            <div class="form-column">
+                                <label for="alergias">Alergias:</label>
+                                <input type="text" id="alergias" name="alergias" placeholder="Ingrese las alergias">
+                                
+                                <label for="medicamentos">Medicamentos:</label>
+                                <input type="text" id="medicamentos" name="medicamentos" placeholder="Ingrese los medicamentos">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
